@@ -32,7 +32,7 @@ return [
     ],
 
     'supadata' => [
-        'id' => env('SUPADATA_AFF_ID'),
+        'id' => (int) env('SUPADATA_AFF_ID'),
         'password' => env('SUPADATA_AFF_PASSWORD'),
         'endpoint' => env('SUPADATA_END_POINT'),
     ],

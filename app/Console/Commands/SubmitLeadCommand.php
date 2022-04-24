@@ -43,7 +43,7 @@ class SubmitLeadCommand extends Command
             "aff_password" => config('services.supadata.password'),
             "sub_id" => "123789",
             "referring_website" => "www.some-loan-company.co.uk",
-            "loan_amount" => 1000,
+            "loan_amount" => 500,
             "loan_purpose" => "other",
             "loan_term" => 12,
             "guarantor" => "no",
