@@ -31,4 +31,9 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'supadata' => [
+        'id' => env('SUPADATA_AFF_ID'),
+        'password' => env('SUPADATA_AFF_PASSWORD'),
+        'endpoint' => env('SUPADATA_END_POINT'),
+    ],
 ];
