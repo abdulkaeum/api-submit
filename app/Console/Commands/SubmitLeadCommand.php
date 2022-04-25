@@ -29,11 +29,18 @@ class SubmitLeadCommand extends Command
      */
     public function handle()
     {
+        //dd(gettype($this->lead()['sub_id']), $this->lead()['sub_id']);
+
+        /*foreach ($this->lead() as $k => $v) {
+            echo $k .' '.gettype($v)."\n";
+        }*/
+
         $response = Http::acceptJson()
             ->post(config('services.supadata.endpoint'), $this->lead())
-            ->ok();
+            ->json();
 
-        return $this->info($response);
+        //dd($response);
+        return $this->info($response['status']);
     }
 
     protected function lead(): array
